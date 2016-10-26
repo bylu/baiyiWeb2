@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,innitial-scale=1" />
+    <title></title>
+    <style type="text/css">
+        /**公共属性设置**/
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            font-family: "宋体";
+        }
+
+        body {
+            /*height: 100%;
+            height: 40em;*/
+        }
+
+        .container {
+        }
+
+        img {
+            border: 0;
+            width: 100%;
+            vertical-align: middle;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!--商城的全局配置-->
+    <div class="container">
+        <!--商城顶部的导航开始-->
+        <div class="div_top">
+			<div class="showgoodsinfo"> </div>
+			<label class="thisinfo"></label>
+        </div>
+        <!--商城顶部的导航结束-->
+     
+    </div>
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+  /*四舍五入(保留两位小数)后格式化成金额的形式*/
+	function formatCurrency(num) {  
+		num = num.toString().replace(/\$|\,/g,'');  
+		if(isNaN(num))  
+			num = "0";  
+		sign = (num == (num = Math.abs(num)));  
+		num = Math.floor(num*100+0.50000000001);  
+		cents = num%100;  
+		num = Math.floor(num/100).toString();  
+		if(cents<10)  
+		cents = "0" + cents;  
+		for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)  
+		num = num.substring(0,num.length-(4*i+3))+','+  
+		num.substring(num.length-(4*i+3));  
+		return (((sign)?'':'-') + num + '.' + cents);  
+	}  
+	
+	
+
+	$(document).ready(function(){
+	var str="";
+
+	$(".thisinfo").html(formatCurrency(123654789));
+		 $.ajax({
+				async:false,
+				url: 'http://172.16.10.85/newWeb/index.php/Test/Shopstore/index.php?userid=47475',
+				type: "GET",
+				dataType: 'jsonp',
+				jsonp: 'jsoncallback',
+				data:{},
+				success: function (json) {
+					if(json["isok"] == "success"){
+						$(".user_score").html(json["score"]);
+						$(".user_lottery").html(json["lottery"]);
+						 var  obj=json['data'];
+					    $.each(obj,function(key,value){
+							str += "<div><img src=\"images/"+value.goodname+".png\" /><label>"+value.goodname+"</label></div>";
+						});
+						$(".showgoodsinfo").append(str);
+					}
+				},
+				error: function(xhr){
+				alert("请求出错,请检查相关度网络状况");
+				}
+			});	
+	});
+</script>
+</html>

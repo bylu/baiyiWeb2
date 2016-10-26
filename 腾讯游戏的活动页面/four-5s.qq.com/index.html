@@ -1,0 +1,329 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="炫舞时代新人成长有计划！注册100%得QB、Q钻和华美套装！保升20级无压力，就是这么任性！">
+<meta name="Keywords" content="炫舞时代,新人,成长计划,保升20级">
+<title>新生成长计划-炫舞时代官方网站-腾讯游戏</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2014-12-31 -->
+<style>
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+img{border:0}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol{padding:0;list-style:none;}
+body{padding-top:42px; background-color:#1c1e24;}
+.clearfix:after{content:" "; clear:both; height:0; visibility:hidden; display:block;}
+.clearfix{*zoom:1;}
+.hide{height:0; line-height:0; font-size:0; visibility:hidden; display:none;}
+body,html{ overflow-x:hidden;}
+/* wrap */
+.content img{display:block;margin:0 auto;}
+.logo,.btn{ text-indent:-999em;overflow:hidden;z-index:99;}
+.wrap{min-width:1000px;width:100%; background:#1e0547 url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/bg.jpg) center top no-repeat;}
+.content{width:1000px;margin:0 auto;font-family:'\5FAE\8F6F\96C5\9ED1';color:#fff;font-size:14px;}
+.header{height:350px; background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/header.jpg) no-repeat;position:relative;}
+.logo{width:135px;height:95px;display:block;position:absolute;left:0;top:0;}
+.theme{ background:url(http://ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/theme.jpg) no-repeat;height:116px;padding-top:224px;}
+.btn,.title,.tab .hd a{ background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/comm.png) no-repeat;}
+.btn_box{position:relative;height:82px;}
+.btn_box .btn{width:262px;height:58px;position:absolute;top:0;}
+.btn_box .btn_enter{left:28px; background-position:0 0;}
+.btn_box .btn_enter:hover{ background-position:0 -60px;}
+.btn_box .btn_down{left:244px;  background-position:-265px -60px;}
+.btn_box .btn_down:hover{background-position:-265px 0;}
+#unlogin,#logined{padding-left:30px;}
+#unlogin a,#logined a{color:#ffda28;}
+.main{height:1160px;padding:0 35px; background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/main.jpg) no-repeat;}
+.list_tebie p,.list_zhuce p{ text-align:center;padding:20px 0;height:30px;}
+.title{padding:40px 0 0 60px;overflow:hidden;height:25px;}
+.tit_01{ background-position:0 -542px;height:50px;width:400px;}
+.tit_02{ background-position:0 -340px;height:8px;}
+.tit_03{ background-position:0 -393px;width:600px;float:left;}
+.tit_04{ background-position:0 -464px;}
+.list_zhuce{padding:20px 0 0 10px;height:272px;}
+.list_zhuce p{padding-bottom:15px;}
+.list_zhuce li{ background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize1.jpg) center top no-repeat;pading-top:10px;}
+.list_zhuce li,.list_dress li{width:226px;float:left;}
+.btn_get{width:223px;height:59px; background-position:0 -123px;display:block;margin:0 auto;}
+.btn_get:hover{ background-position:-226px -123px;}
+.list_dress{padding:26px 0 0 10px;height:270px;}
+.list_dress li{padding:10px 0; background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize2.jpg) center top no-repeat;position:relative;}
+.btn_brand{width:63px;height:62px;display:block;position:absolute;left:1px;top:0; background-position:-466px -227px;}
+.list_dress p{padding:10px 0 8px 0; text-align:center;}
+.t_orange{color:#ffa71d;}
+.btn_remind{width:144px;height:38px; background-position:0 -185px;float:right;margin:10px 15px 0 0;}
+.btn_remind:hover{ background-position:-147px -185px;}
+.tab{width:900px;margin:15px auto 0 auto;}
+.tab .hd a{display: block;height:58px; background-position:-226px -227px; color:#fff; text-align:center;line-height:58px;font-size:24px;}
+.tab .hd a:hover{ text-decoration:none;}
+.hd .on a{background-position:0 -227px;}
+.tab .hd li{float:left;width:223px;padding-top:3px;}
+.tab .hd{width:230px;height:305px;float:left;}
+.tab .bd{width:665px;float:left;}
+/* 显示/隐藏 */
+.tab .tab-panel{display: none;}
+.tab .dis{display: block }
+.list_tab li{width:218px;float:left;padding:30px 3px 5px 0; background:url(http://ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize3.jpg) center 3px no-repeat;}
+.list_tab p{ text-align:center;padding:35px 0 10px 0;height:25px;}
+/* bg_repeat */
+.bg_repeat{ background:#f13b82 url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/repeat.jpg) center top repeat-x;padding:40px 0;}
+.btn_get2{width:157px;height:47px;display:block;margin:5px auto 0 auto;background-position:0 -288px;}
+.btn_get2:hover{ background-position:-161px -288px;}
+.list_tebie li{width:186px;padding:56px 7px 0 7px;float:left; background:url(http://ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize4.jpg) center top no-repeat;position:relative;}
+.list_tebie .btn_brand{ background-position:-456px -123px;left:120px;top:90px;}
+/* sidebar */
+.sidebar{width:120px;position:fixed; z-index:1; top:200px; left:50%;margin-left:470px; _position:absolute; _top:expression(eval(document.documentElement.scrollTop+200));font-size:12px;}
+.sidebar li{padding-bottom:2px;}
+.sidebar a{display:block;height:50px;line-height:50px; text-align:center;color:#fff;font-size:20px; background-color:#ff288d;font-family:'\5FAE\8F6F\96C5\9ED1';}
+.sidebar a:hover{color:#ff0; text-decoration:none; background-color:#ea036f;}
+/* huandong */
+.a-auto{position:absolute;width:100%;left:0;height:600px;top:0;}
+.a-auto li{position:absolute;left:0;top:0;width:100%;height:600px;}
+.a-auto .float1{ background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/float1.png) center top no-repeat;}
+.a-auto .float2{ background:url(ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/float2.png) center top no-repeat;}
+/*** footer  **/
+#footer_ied{min-width:1000px; text-align:center; font-size:12px; line-height:19px; color:#fff;}
+.wrap_ied{ margin:0 auto; padding:30px 0; width:1000px;}
+.wrap_ied a{color:#fff;}
+#footer_ied p.e{ margin-top:-4px; font-size:10px;}
+</style>
+</head>
+<body>
+<h1 class="hide">新生成长计划</h1>
+<h2 class="hide">保升20级 100%得Q钻 </h2>
+<div class="wrap">
+	<div class="content">
+		<div class="header"><a href="http://5s.qq.com/" target="_blank" class="logo" title="炫舞时代">炫舞时代</a></div>
+		<div class="theme">
+			<div class="btn_box">
+				<a href="http://5s.qq.com/" target="_blank" class="btn btn_enter" title="进入官网">进入官网</a>
+				<a href="http://down.qq.com/dancer2/full/5s_1.3.5.4_micro_setup.exe" class="btn btn_down" title="极速下载">极速下载</a>
+			</div>
+			<p id="unlogin">亲爱的用户，请 <a href="javascript:LoginManager.login();" id="dologin">【登录】</a></p>
+			<p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，
+                            <span id="spanNotBind">
+                                <a href="javascript:amsInit(15811, 123465);">  绑定大区</a>,</span>
+                            <span id="spanBind" style="display:none">
+                            <span id="area_info"></span>,
+                            <a href="javascript:amsInit(15811, 123465);">更改绑定</a> </span>
+                            <a href="javascript:LoginManager.logout();" id="dologout">【注销】</a></p>
+<!--                        <div id="spanNotBind">
+                            <a href="javascript:amsInit(15811, 123465);">  绑定大区</a>
+                        </div>
+                        <div id="spanBind" style="display:none">
+                            <span id="area_info"></span>
+                            <a href="javascript:amsInit(15811, 123465);">更改绑定</a>  
+                        </div>-->
+		</div><!-- //theme -->
+		<div class="main">
+			<div class="title tit_01" id="event01">
+				<h3 class="hide">01 注册100%送QB</h3>
+				<p>新注册的玩家升级到8级即可领取1500点卷和QB礼包任选其一QB礼包随机获得2-10QB不等！</p>
+			</div><!-- //title -->
+			<ul class="list_zhuce clearfix">
+				<li>
+					<img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize1_1.jpg" width="160" height="107" alt="QB(2-10)" />
+					<p>QB(2-10)</p>
+					<a href="javascript:amsSubmit(15811,123408);" class="btn btn_get" title="立即领取">立即领取</a>
+				</li>
+				<li>
+					<img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize1_2.jpg" width="160" height="107" alt="1500点券" />
+					<p>1500点券</p>
+					<a href="javascript:amsSubmit(15811,123409);" class="btn btn_get" title="立即领取">立即领取</a>
+				</li>
+			</ul><!-- //list_zhuce -->
+			<div class="title tit_02" id="event02">
+				<h3 class="hide">02 新人见面礼，注册送奢华套装</h3>
+			</div><!-- //title -->
+			<div class="list_dress">
+				<ul class="clearfix">
+					<li><strong class="btn btn_brand">永久非卖</strong><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize2_1.jpg" width="160" height="107" alt="英伦帅气/玫瑰小姐（非卖-永久）" /><p>英伦帅气/玫瑰小姐</p></li>
+					<li><strong class="btn btn_brand">永久非卖</strong><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize2_2.jpg" width="160" height="107" alt="幸运瓶（非卖-永久）" /><p>幸运瓶</p></li>
+					<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize2_3.jpg" width="160" height="107" alt="紫隼之翼(15天) " /><p>紫隼之翼（15天） </p></li>
+					<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize2_4.jpg" width="160" height="107" alt="桃心毛衣/桃心萌装(15天) " /><p>桃心毛衣/桃心萌装（15天）</p></li>
+				</ul>
+				<a href="javascript:amsSubmit(15811,123416);" class="btn btn_get" title="立即领取">立即领取</a>
+			</div><!-- //list_dress -->
+			<div class="clearfix">
+				<div class="title tit_03" id="event03">
+					<h3 class="hide">03 新人成长礼，升级so easy！</h3>
+					<p>2015.1.1起新注册的玩家，可以<span class="t_orange">领取注册大礼包</span>一份！（不能重复领取）</p>
+				</div><!-- //title -->
+				<a href="javascript:pop_qq_clock('您在炫舞时代订阅的新人成长100送QB、Q钻活动已经开启，快去领取升级好礼吧！','2015-1-31 10:00',5,'');" class="btn btn_remind" title="QQ提醒">QQ提醒</a>
+			</div>
+			<div class="tab" id="tab">
+				<div class="hd">
+					<ul>
+						<li><a href="javascript:void(0);">6级礼包</a></li>
+						<li><a href="javascript:void(0);">8级礼包</a></li>
+						<li><a href="javascript:void(0);">10级礼包</a></li>
+						<li><a href="javascript:void(0);">12级礼包</a></li>
+						<li><a href="javascript:void(0);">15级礼包</a></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<div class="tab-panel">
+						<ul class="list_tab clearfix">
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_1_1.jpg" width="194" height="140" alt="初级高分饮品*2" /><p>初级高分饮品*2</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_1_2.jpg" width="194" height="140" alt="简易饭团*2" /><p>简易饭团*2</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_1_3.jpg" width="194" height="140" alt="音符输入器*2" /><p>音符输入器*2</p></li>
+						</ul>
+						<a href="javascript:amsSubmit(15811,123417);" class="btn btn_get" title="立即领取">立即领取</a>
+					</div><!-- //tab-panel -->
+					<div class="tab-panel">
+						<ul class="list_tab clearfix">
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_2_1.jpg" width="194" height="140" alt="经验棒棒糖*2" /><p>经验棒棒糖*2</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_2_2.jpg" width="194" height="140" alt="热情动作卡*1" /><p>热情动作卡*1</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_2_3.jpg" width="194" height="140" alt="娇颜之花/幽香袭人*7天" /><p>娇颜之花/幽香袭人*7天</p></li>
+						</ul>
+						<a href="javascript:amsSubmit(15811,123418);" class="btn btn_get" title="立即领取">立即领取</a>
+					</div><!-- //tab-panel -->
+					<div class="tab-panel">
+						<ul class="list_tab clearfix">
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_3_1.jpg" width="194" height="140" alt="3局对局双倍经验卡" /><p>3局对局双倍经验卡</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_3_2.jpg" width="194" height="140" alt="章鱼小蓝*7天" /><p>章鱼小蓝*7天</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_3_3.jpg" width="194" height="140" alt="热情动作卡*1" /><p>热情动作卡*1</p></li>
+						</ul>
+						<a href="javascript:amsSubmit(15811,123419);" class="btn btn_get" title="立即领取">立即领取</a>
+					</div><!-- //tab-panel -->
+					<div class="tab-panel">
+						<ul class="list_tab clearfix">
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_4_1.jpg" width="194" height="140" alt="杜鹃花*2" /><p>杜鹃花*2</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_4_2.jpg" width="194" height="140" alt="500点券" /><p>500点券</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_4_3.jpg" width="194" height="140" alt="绿色猪猪*1" /><p>绿色猪猪*1</p></li>
+						</ul>
+						<a href="javascript:amsSubmit(15811,123420);" class="btn btn_get" title="立即领取">立即领取</a>
+					</div><!-- //tab-panel -->
+					<div class="tab-panel">
+						<ul class="list_tab clearfix">
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_5_1.jpg" width="194" height="140" alt="低级任务卷轴*1" /><p>低级任务卷轴*1</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_2_1.jpg" width="194" height="140" alt="经验棒棒糖*2" /><p>经验棒棒糖*2</p></li>
+							<li><img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/tab_4_2.jpg" width="194" height="140" alt="1000点券" /><p>1000点券</p></li>
+						</ul>
+						<a href="javascript:amsSubmit(15811,123421);" class="btn btn_get" title="立即领取">立即领取</a>
+					</div><!-- //tab-panel -->
+				</div>
+			</div><!-- //tab -->
+			
+		</div><!-- //main -->
+	</div><!-- //content -->
+	<ul class="a-auto" id="aerolite">
+		<li data-sum="30" class="float1"></li>
+		<li data-sum="50" class="float2"></li>
+	</ul>
+</div><!-- //wrap -->
+<div class="bg_repeat">
+	<div class="content">
+		<div class="title tit_04" id="event04">
+			<h3 class="hide">04 新人特别礼，升20级送Q钻</h3>
+			<p>新玩家升级到20级即可领取一下奖励一份！Q钻数量有限，先到先得！（每人限领1份）</p>
+		</div><!-- //title -->
+		<ul class="list_tebie clearfix">
+			<li>
+				<span class="btn btn_brand">价值30QB</span>
+				<img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize4_1.jpg" width="100" height="69" alt="3000点券"/>
+				<p>3000点券</p>
+				<a href="javascript:amsSubmit(15811,123455);" class="btn btn_get2" title="立即领取">立即领取</a>
+			</li>
+			<li>
+				<img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize4_2.jpg" width="100" height="69" alt="蓝钻一个月"/>
+				<p>蓝钻一个月</p>
+				<a href="javascript:amsSubmit(15811,123456);" class="btn btn_get2" title="立即领取">立即领取</a>
+			</li>
+			<li>
+				<img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize4_3.jpg" width="100" height="69" alt="黄钻一个月"/>
+				<p>黄钻一个月</p>
+				<a href="javascript:amsSubmit(15811,123457);" class="btn btn_get2" title="立即领取">立即领取</a>
+			</li>
+			<li>
+				<img src="ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize4_4.jpg" width="100" height="69" alt="绿钻一个月"/>
+				<p>绿钻一个月</p>
+				<a href="javascript:amsSubmit(15811,123460);" class="btn btn_get2" title="立即领取">立即领取</a>
+			</li>
+			<!--li>
+				<img src="http://ossweb-img.qq.com/images/chanpin/5s/public/a20141231plan/prize4_5.jpg" width="100" height="69" alt="红钻一个月"/>
+				<p>红钻一个月</p>
+				<a href="javascript:amsSubmit(15811,123461);" class="btn btn_get2" title="立即领取">立即领取</a>
+			</li-->
+		</ul>
+	</div><!-- //content -->
+</div><!-- //bg_repeat -->
+<ul class="sidebar">
+	<li><a href="#event01">QB</a></li>
+	<li><a href="#event02">套装</a></li>
+	<li><a href="#event03">礼包</a></li>
+	<li><a href="#event04">Q钻</a></li>
+        <li><a href="http://x52.qq.com/act/a20141231plan/index.htm" onClick="window.external.addFavorite(this.href,this.title);return false;" title="新生成长计划" rel="sidebar">收藏页面</a></li>
+</ul>
+<script src="ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src="ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js"></script>
+<script src="ossweb-img.qq.com/images/x52/title/5s.js"></script>
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript" src="ossweb-img.qq.com/images/ams/atm/reporting.js?action=15811"></script>
+<script type="text/javascript" src=""ossweb-img.qq.com/comm-htdocs/js/ams/v0.2R02/act/15811/act.desc.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script>
+milo.addEvent(g("dologin"), "click", function() {
+	need("biz.login-min",function(LoginManager){
+		LoginManager.init({
+			needReloadPage:true
+		});
+		LoginManager.login();
+	});
+	return false;
+});
+milo.addEvent(g("dologout"), "click", function() {
+	need("biz.login-min",function(LoginManager){
+		LoginManager.logout();
+	});
+	return false;
+});
+milo.ready(function() {
+	need("biz.login-min",function(LoginManager){
+		LoginManager.checkLogin(function(){
+			g("login_qq_span").innerHTML = LoginManager.getUserUin();//获取QQ号
+		});
+	});
+});
+need("biz.tabs",function (tabs){
+	//简单切换
+	tabs.init("tab", "tab-panel");
+})
+//缓动
+	var oYunshi = document.getElementById('aerolite');  //陨石图片
+	$('#aerolite li').each(function(i, e) {
+			$(this).data('left',$(this).offset().left);
+			$(this).data('top',$(this).offset().top);
+		});
+	document.onmousemove = function (ev) {
+	  var oEvent = ev || event;
+	  var siteX = oEvent.clientX;
+	  var siteY = oEvent.clientY;
+		$('#aerolite li').each(function(i, e) {
+			$(this).css("left",siteX/$(this).data("sum"))
+			$(this).css("top",siteY/$(this).data("sum"))
+		});
+	};
+function pop_qq_clock(con,time,adv,url){
+window.open('http://qzs.qq.com/snsapp/app/bee/widget/open.htm#content=' + encodeURIComponent(con) +'&time=' + encodeURIComponent(time) +'&advance=' + adv +'&url=' + encodeURIComponent(url));
+} 
+if(typeof(pgvMain) == 'function') pgvMain();</script>
+<!--[if IE 6]>
+<script src="http://ossweb-img.qq.com/images/js/comm/DD_belatedPNG-min.js"></script>
+<script>
+DD_belatedPNG.fix('.float1,.float2');
+</script>
+<![endif]-->
+</body>
+</html><!--[if !IE]>|xGv00|f79ca109059d6c47a5cf832f40cfdd2d<![endif]-->

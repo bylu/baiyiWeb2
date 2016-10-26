@@ -1,0 +1,643 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-CP">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="6月考试月，呼唤家族成员一起争五星家族，为家族争光，拿好礼！">
+<meta name="Keywords" content="炫舞时代 家族 签到 非卖 抽奖">
+<title>争五星家族，拿非卖好礼-炫舞时代官方网站-腾讯游戏</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2015-05-26 -->
+<style>
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em,b{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:underline; text-decoration:none;}
+img{border:0}
+button,input,select,textarea{font-size:100%;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+td,th,ul,ol,li{padding:0; list-style:none;}
+body{padding-top:42px; background-color:#ffc885; z-index:1000px; min-width:1000px;}
+.clearfix:after{content:" "; clear:both; height:0; visibility:hidden; display:block;}
+.clearfix{*zoom:1;}
+.hide{display:none;}
+/* top */
+.wrap{ width:1000px; margin:0 auto;font-family:'\5FAE\8F6F\96C5\9ED1';}
+.top_bg{ background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/top_bg.jpg) center top no-repeat; min-width:1000px; overflow:hidden;}
+.top_1{ background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/top_1.jpg) center top no-repeat; height:438px;}
+.top_2{ background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/top_2.jpg) center top no-repeat; height:438px;}
+.logo,.xz,.gw,.dl,.cj_but,.wu_xing,.lq,.act_pop_close{ text-indent:-9999px; overflow:hidden;}
+.logo{ display:block; width:219px; height:153px;}
+.time{ color:#000; font-size:18px; text-align:center; padding-top:308px;}
+.xz,.gw,.title,.dl,.ck,.zh,.name,.cj_but,.wu_xing,.lei_j,.lq,.act_pop_close{ background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/comm.png) no-repeat;}
+.xz,.gw{ float:left; width:237px; height:72px; margin-top:10px;}
+.xz{ background-position:0 -223px; margin-left:254px;}
+.xz:hover{ background-position:-238px -223px;}
+.gw{ background-position:-477px -223px; margin-left:29px;}
+.gw:hover{ background-position:-715px -223px;}
+#unlogin,#logined{ text-align:right; color:#000; font-size:14px;}
+#unlogin a,#logined a{color:#000; }
+/*mian */
+.mian_bg{ background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/mian_bg.jpg) center top no-repeat;min-width:1000px;}
+.mian{ background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/mian.jpg) center top no-repeat; height:1136px;}
+.title{ width:1000px; height:111px;}
+.sm{ color:#fff; font-size:14px; padding:78px 0 0 107px; height:20px; overflow:hidden;}
+.dl{ background-position:0 -299px;float:left; width:172px; height:45px; text-align:center; line-height:44px; color:#ffeeb8; font-size:18px; margin:39px 0 0 25px;}
+.dl:hover{ background-position:-175px -299px;}
+.tx{ float:left; padding:55px 0 0 10px;  font-size:12px; height:20px; line-height:20px;}
+.list{ padding:18px 0 0 20px;}
+.list li{ float:left; width:93px; padding:0 0 8px 3px; position:relative;}
+.xing{background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/xing.jpg) center top no-repeat; width:93px; height:90px; text-align:center;}
+.ri{ color:#a85928;font-weight:bold; font-size:18px; padding-top:26px;}
+.yue{ color:#fff; font-size:16px; padding-top:10px;}
+.yd,.yd_dl{ color:#ad5927; font-size:12px; width:93px; text-align:center; height:20px; line-height:20px;font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif;}
+.yd_dl{ color:#d02100; position:absolute; left:3px; top:90px;}
+.tit_2{ background-position:0 -116px; height:105px; margin-top:25px;}
+.sm2{ width:540px; padding-top:70px;}
+.ck,.sm2{ float:left;}
+.ck{ background-position:-779px -342px; width:122px; height:31px; line-height:30px; text-align:center; color:#bd330f; font-size:14px; margin:42px 0 0 196px;}
+.left,.right{ float:left; width:486px; padding:7px 0  0 23px;}
+.left{ position:relative;}
+.right{ width:450px; padding-left:25px}
+.zh{ background-position:0 -388px; display:block; width:103px; height:29px; text-align:center; line-height:28px; color:#ffeeb8; font-size:16px; margin:14px 0 0 23px;}
+.zh:hover{ background-position:-105px -388px;}
+.cj li{ float:left; width:160px; text-align:center; padding:0 0 2px 2px;}
+.cj img{ display:block;}
+.name{ background-position:0 -347px; width:160px; height:36px; line-height:36px; font-size:14px; color:#ffcf94;}
+.cj_but{ background-position:-349px -299px; width:160px; height:109px; display:block;}
+.wu_xing{ background-position:-163px -347px; display:block; width:159px; height:31px;}
+.hd_qj{ font-size:14px; color:#000; padding-right:13px; line-height:18px; height:36px; overflow:hidden;}
+.lei_j{ background-position:-674px -375px; width:203px; height:24px; line-height:24px; color:#fff; font-size:12px; text-align:center; margin-top:11px;}
+.lq{ background-position:-674px -299px; float:left; width:139px; height:42px; margin:40px 0 0 10px;}
+.lq:hover{ background-position:-815px -299px;}
+.dj_cj{ float:left; padding-top:15px;}
+.dj_cj li{ float:left; width:138px; padding-right:2px;}
+.dj_cj img{ display:block;}
+.dj_cj .name{ width:138px; text-align:center; font-size:12px;}
+.rule{ padding-top:60px; color:#a45700; font-size:14px;}
+.rule li{ height:21px; overflow:hidden;}
+/*抽奖 */
+.flash{width:484px; height:220px;overflow:hidden; position:absolute; left:25px;top:7px;}
+/**footer**/
+#footer_ied{min-width:1000px; text-align:center; font-size:12px; line-height:19px; color:#000; background:url(ossweb-img.qq.com/images/x52/cp/a20150526family/foot_bg.jpg) center top no-repeat; height:84px;}
+.wrap_ied{ margin:0 auto; padding:5px 0 20px 0; width:1000px;}
+.wrap_ied a{ color:#000;}
+#footer_ied p.e{ margin-top:-4px; font-size:10px;}
+/*弹窗*/
+.bg{ background-color:#ffd09a; width:617px; padding:10px 0 20px 0;font-family:'\5FAE\8F6F\96C5\9ED1'; position:relative; display:none;}
+.act_pop_close{ background-position:-210px -388px; position:absolute; display:block;left:619px; top:0; width:28px; height:28px; }
+.wx_ts{ color:#9e2101; font-size:14px; padding:0 10px 10px 10px;}
+.tc_lb{ margin:0 10px 0 10px;}
+.tc_lb thead th{background-color:#582d14; }
+.tc_lb thead th,.tc_lb tbody td{ width:154px; text-align:center; line-height:42px; height:42px;color:#ffebd4; font-size:16px;}
+.tc_lb tbody td{ border:1px solid #deaf7f; color:#000;}
+.ye{ font-size:14px; color:#9e2101; text-align:right; padding:10px 10px 0 0;}
+.ye a{color:#9e2101;}
+.tc_lb2 tbody td{ font-weight:bold; color:#9e2101;}
+</style>
+</head>
+<body>
+<h1 class="hide">争五星家族，拿非卖好礼</h1>
+<div class="top_bg">
+    <div class="wrap">
+    	<div class="top_1">
+        	<a href="5s.qq.com/" title="" target="_blank" class="logo">炫舞时代</a>
+        </div>
+        <div class="top_2">
+        	<p class="time">活动时间：2015.6月1日-2015.6月30日</p>
+            <div class="clearfix">
+            	<a href="down.qq.com/dancer2/full/5s_1.3.6.4_micro_setup.exe" title="极速下载" target="_blank" class="xz">极速下载</a>
+                <a href="5s.qq.com/" title="进入官网" target="_blank" class="gw">进入官网</a>
+            </div>
+            <p id="unlogin">亲爱的用户，请 <a href="javascript:;" id="dologin">[登录]</a></p>
+            <p id="logined" style="display:none">欢迎您，<span id='login_qq_span'></span>，
+				<a href="javascript:;" id="dologout">[注销]</a>
+<span id="spanNotBind">
+	<a href="javascript:amsInit(22585, 153568);">  绑定大区</a>
+</span>
+<span id="spanBind" style="display:none">
+	<span id="area_info"></span>
+	 <a href="javascript:amsInit(22585, 153568);">更改绑定</a>  
+</span>
+
+			</p>
+        </div>
+    </div>
+</div>
+<div class="mian_bg">
+	<div class="mian wrap">
+    	<div class="title clearfix">
+        	<h2 class="hide">01每日点亮小星星</h2>
+            <p class="sm">活动期间，家族玩家每天登录游戏后，到页面点击"点亮星星"即可免费抽奖1次！</p>
+         </div>
+        <div class="clearfix">
+            <a href="javascript:lightStar();" title="点亮星星" class="dl">点亮星星</a>
+            <form class="tx"><input id="remind_me" type="checkbox" name="bike" />每日领星星提醒</form>
+        </div>
+        <ul class="list clearfix" id="calendar_list">
+            <li>
+                <div class="xing">
+                    <p class="ri">1</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">2</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">3</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">4</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">5</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">6</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">7</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">8</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">9</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">10</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">11</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">12</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">13</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">14</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">15</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">16</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">17</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">18</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">19</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">20</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">21</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">22</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">23</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">24</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">25</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">26</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">27</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">28</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">29</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+            <li>
+                <div class="xing">
+                    <p class="ri">30</p>
+                    <p class="yue">6月</p>
+                </div>
+                <p class="yd"><span class="num">0</span>人已经点亮</p>
+                <!--p class="yd_dl">0人已经点亮</p-->
+            </li>
+        </ul>
+        <div class="title tit_2 clearfix">
+        	<h2 class="hide">02五星家族拿非卖</h2>
+            <p class="sm sm2">每日点亮星星可获得1次抽奖机会，召唤小伙伴可再得一次机会！今日还有<span id="cur_jf"></span>次抽奖机会</p>
+            <a href="javascript:queryLottLog();" title="查看抽奖记录>>" class="ck">查看抽奖记录>></a>
+        </div>
+        <a href="javascript:amsSubmit(22585,153543);" title="召唤小伙伴"  class="zh">召唤小伙伴</a>
+        <div class="clearfix">
+        	<div class="left">
+                <ul class="cj">
+                	<li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj_1.jpg" width="160" height="73" alt="光丝彩线/纯情迷恋(3天)" />
+                        <p class="name">光丝彩线/纯情迷恋(3天)</p>
+                    </li>
+                    <li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj_2.jpg" width="160" height="73" alt="彩染风丝/濯彻胜境(5天)" />
+                        <p class="name">彩染风丝/濯彻胜境(5天)</p>
+                    </li>
+                    <li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj_3.jpg" width="160" height="73" alt="田园风车/童年风车(3天)" />
+                        <p class="name">田园风车/童年风车(3天)</p>
+                    </li>
+                    <li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj_4.jpg" width="160" height="73" alt="热情动作卡01(1个)" />
+                        <p class="name">热情动作卡01(1个)</p>
+                    </li>
+                    <li><a href="javascript:;" title="立即抽奖" class="cj_but">立即抽奖</a></li>
+                    <li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj_5.jpg" width="160" height="73" alt="巧克力(1个)" />
+                        <p class="name">巧克力(1个)</p>
+                    </li>
+                </ul>
+                <div class="flash"><div id="swfcontent"></div></div>
+            </div>
+            <div class="right">
+            	<strong class="wu_xing">五星家族奖</strong>
+                <p class="hd_qj">活动期间，累计4日有3名或以上家族成员点亮星星，即可直接领非卖！快去通知家族小伙伴来参与吧！（每个QQ号限领取一份）</p>
+				<p class="lei_j">累计4天3名及以上家族成员点亮>></p>
+                <ul class="dj_cj">
+                	<li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj1.jpg" width="138" height="67" alt="花花公子/梦之纱华(7天)"/>
+                        <p class="name">花花公子/梦之纱华(7天)</p>
+                    </li>
+                    <li>
+                    	<img src="ossweb-img.qq.com/images/x52/cp/a20150526family/dj2.jpg" width="138" height="67" alt="米色浣熊(7天)"/>
+                        <p class="name">米色浣熊(7天)</p>
+                    </li>
+                </ul>
+                <a href="javascript:amsSubmit(22585,153550);" title="立即领取" class="lq">立即领取</a>
+            </div>
+        </div>
+        <div class="rule">
+            <strong>活动规则：</strong>
+            <ul>
+                <li>1.活动时间2015.6.1-2015.6.30；</li>
+                <li>2.活动期间，玩家当日登录游戏后即可在页面为本家族点亮星星，每日点亮星星可活动一次抽奖机会，召唤小伙伴可再活动一次机会；</li>
+                <li>3.累计4日有3名或以上家族成员点亮星星，即可领取”五星家族奖“。</li>
+				<li>4.参与抽奖和领取”五星家族奖“需要当日登录过游戏。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--弹窗-->
+<div class="bg" id="J_con1">
+	<a href="javascript:showDialog.hide();" title="关闭" class="act_pop_close  act_pop_sprite"><span class="act_pop_none">关闭</span></a>
+	<p class="wx_ts">温馨提示：虚拟道具奖品将在24小时内发到您的游戏仓库，请耐心等候，谢谢您的理解与支持！</p>
+    <table class="tc_lb">
+        <thead>
+            <tr><th>获奖时间</th><th >获奖大区</th><th>所获礼包 </th><th>礼包数量</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>2015-05-22</td><td>华北大区 </td><td>巧克力</td><td>1</td></tr>
+            <tr><td>2015-05-22</td><td>华北大区 </td><td>巧克力</td><td>1</td></tr>
+            <tr><td>2015-05-22</td><td>华北大区 </td><td>巧克力</td><td>1</td></tr>
+            <tr><td>2015-05-22</td><td>华北大区 </td><td>巧克力</td><td>1</td></tr>
+            <tr><td>2015-05-22</td><td>华北大区 </td><td>巧克力</td><td>1</td></tr>
+        </tbody>
+    </table>
+    <p class="ye">1/1页 <a href="#" title="上一页">上一页 </a><a href="#" title="下一页">下一页</a></p>
+</div>
+<!--弹窗-->
+<div class="bg" id="J_con2">
+	<a href="javascript:showDialog.hide();" title="关闭" class="act_pop_close  act_pop_sprite"><span class="act_pop_none">关闭</span></a>
+	<p class="wx_ts">温馨提示：虚拟道具奖品将在24小时内发到您的游戏仓库，请耐心等候，谢谢您的理解与支持！</p>
+    <table class="tc_lb tc_lb2">
+        <thead>
+            <tr><th>获奖时间</th><th >获奖大区</th><th>所获礼包 </th><th>礼包数量</th></tr>
+        </thead>
+        <tbody>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4">您尚未获得任何礼包</td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+        </tbody>
+    </table>
+    <p class="ye">1/1页 <a href="#" title="上一页">上一页 </a><a href="#" title="下一页">下一页</a></p>
+</div>
+
+
+
+
+
+<!--对话框容器模板-->
+<script id="tpl_dialog_153663" type="text/tempalate">					
+		<p class="p_tips_bar"><strong>温馨提示</strong>：虚拟道具奖品将在24小时内发到您的游戏内仓库，请耐心等候，谢谢您的理解与支持！</p>
+		<table class="lz_act_pop_table">
+			<thead>
+				<tr>
+						<th style="width:25%">获奖时间</th>
+						<th style="width:25%">获奖大区</th>
+						<th style="width:25%">所获礼包</th>
+						<th style="width:25%">状态</th>
+				</tr>
+			</thead>
+			<tbody id="tbody_153663"></tbody>
+			 <tfoot id="tfoot_153663"></tfoot>
+		</table>
+</script>
+
+<!--表单内容主体模板-->
+<script id="tpl_tbody_153663" type="text/tempalate">
+	 {if pageData.iRet!='0'}
+		<tr>
+			<td colspan="4" align="center">${pageData.sMsg}</td>
+		</tr>
+	{else}
+		 {for giftInfo in pageData.myGiftList }
+			<tr>
+				<td>${giftInfo.dtGetPackageTime}</td>
+				<td>${giftInfo.areaName}</td>
+				<td>${giftInfo.sPackageName}</td>
+				<td >
+				   {if giftInfo.iStatus=='0'}
+					 成功
+					{else}
+					   {if giftInfo.itemList}
+							 <div>
+							   {for item in giftInfo.itemList}
+								 {if item.iItemStatus=='0'}
+								   <span style="color:green;">${item.sItemName}(${item.iItemNum}) 已发货 </span><br> 
+								 {else}
+								   <span style="color:#aaa;">${item.sItemName}(${item.iItemNum}) 发货中 </span><br> 
+								 {/if}
+							   {/for}
+							 </div>
+					
+						{else}
+							发货中
+						{/if}
+					{/if} 
+								
+				</td>
+			</tr>	
+		 {forelse}
+			 <tr>
+				<td colspan="4" align="center">您尚未获得任何礼包</td>
+			 </tr>
+		{/for}
+	{/if}
+</script>
+
+<!--底部翻页模板-->
+<script id="tpl_tfoot_153663" type="text/tempalate">
+	<tr>
+		<td class="page" colspan="4"><a href="javascript:void(0);" id="prevbtn_153663" title="上一页">上一页</a>
+		<span class="page_num"><em class="now_page"  id="currPage_153663">${pageData.pageNow}</em class="total_page" id="totalPage_153663">/<em>${pageData.pageTotal}</em></span>
+		<a href="javascript:void(0);"  id="nextbtn_153663" title="下一页">下一页</a>
+		</td>
+	</tr>
+</script>
+
+
+
+
+<script src="ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="ossweb-img.qq.com/images/js/title.js"></script>
+<script src="pingjs.qq.com/ping_tcss_ied.js"></script>
+<script src="ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src="ossweb-img.qq.com/images/js/basic/flashmanagerv5.js"></script>
+
+<script type="text/javascript" src="ossweb-img.qq.com/images/ams/atm/reporting.js?action=22585"></script>
+<script type="text/javascript" src="ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src='5s.qq.com/comm-htdocs/js/loadjs.js'></script>
+<script src="ossweb-img.qq.com/images/comm/sign.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+
+<script>
+//登录
+milo.addEvent(g("dologin"), "click", function() {
+	need("biz.login-min",function(LoginManager){
+		LoginManager.init({
+			needReloadPage:true
+		});
+		LoginManager.login();
+	});
+	return false;
+});
+milo.addEvent(g("dologout"), "click", function() {
+	need("biz.login-min",function(LoginManager){
+		LoginManager.logout();
+	});
+	return false;
+});
+milo.ready(function() {
+	need("biz.login-min",function(LoginManager){
+		LoginManager.checkLogin(function(){
+			g("login_qq_span").innerHTML = LoginManager.getUserUin();//获取QQ号
+		});
+	});
+});
+//开始抽奖flash->js
+function callJsToStart(){
+//测试
+	//callFlashToRoll(1);
+	amsSubmit(22585,153548);
+}
+//开发获得抽奖结果 通知flash开始播放效果 js->flash
+function callFlashToRoll(id){
+	//通知转盘转到对应的中奖产品的id （序号从0,1,2.....沿着效果光走的顺序，对应下面配置中奖品光效的位置 如id=0 对应显示在19_20的位置）
+	if(SWFOBJ)SWFOBJ.stopRoll(id);
+}
+//3、flash动画完成通知js  flash->js
+function callJsToComplete(){
+	alert(gLottMsg);
+}
+//初始化抽奖对象的SWFOBJ 可以不知道内部
+var SWFOBJ = FlashManager.init({
+		'flashUrl' : 'ossweb-img.qq.com/images/flash/lottery/lotterybox_2013_v1.swf',
+		//'lighturl':'light.png', 	//外部光圈png  不填写就用默认的效果
+		//'starturl':'startbtn.png',//外部按钮png  不填写就用默认的按钮效果
+		'width':484,//flash 宽度
+		'height':220,//flash 高度
+		'total':5,//抽奖产品的总数
+　　	'sbtnx':162,// 开始抽奖按钮的位置x坐标
+		'sbtny':111	,// 开始抽奖按钮的位置y坐标
+		'sbtnw':160,// 开始抽奖按钮的宽度
+		'sbtnh':109,// 开始抽奖按钮的高度
+		'boxw':160,// 奖品光效的宽度
+		'boxh':109,//奖品光效的高度
+		'position':"0_0,162_0,324_0,324_111,0_111",
+		//奖品光效的位置，对应奖品图片的布局，填入每个奖品的位置以及角度用逗号分割  x_y_rotation（角度为0的可以不填写） 例如19_20或者19_20_0 表示第一个奖品的位置 x坐标为19px y坐标为20px 角度为0。）
+		'contentId' : 'swfcontent',//嵌入swf 的div层的 id
+		'onClickRollEvent' : callJsToStart,//对应上面接口
+		'onCompleteRollEvent':callJsToComplete //对应上面接口
+	});
+	//弹窗
+function TGDialogS(e){
+	need("biz.dialog-min",function(Dialog){
+		Dialog.show({
+			id:e,
+			bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+			opacity:50      //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+		});
+	});
+}
+
+//统计
+if(typeof(pgvMain) == 'function') pgvMain();
+</script>
+</body>
+</html>

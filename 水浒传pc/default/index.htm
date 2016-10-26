@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+{dede:include filename="head.htm"/}
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+            	<div class="contenttop">
+            		<div class="leftimg"><a href="http://shz.100etech.com/xinwengonggao/95.html"><img src="{dede:global.cfg_templets_skin/}/images/midpic.jpg" alt="街机水浒传游戏" /></a></div>
+                    <div class="rightdiv">
+                    	<a href="http://download.6513.com/phoneshz/SHZ_GW.apk" rel="nofollow"><p class="anzhuo"></p></a>
+						<a href="https://itunes.apple.com/cn/app/bai-yi-shui-hu-chuan-jie-ji/id993585766?mt=8" rel="nofollow" target="_blank"><p class="ios"></p></a>
+						<a href="http://download.6513.com/phoneshz/SHZ_GW.ipa" rel="nofollow" target="_blank" ><p class="yueyu"></p></a>
+						<div class="erewimabg">
+							<img src="{dede:global.cfg_templets_skin/}/images/erweima.png" alt="水浒传二维码" />				
+						</div>
+                    </div>
+            	</div>
+
+				 <div class="contentmiddle">
+            		<div class="lefthuodong">
+            			<ul>
+                        	{dede:arclist typeid='1,2'  titlelen='36' row='4'  orderby='pubdate'}
+            				<li><a href='[field:arcurl/]' title='[field:fulltitle/]'>[公告][field:title/]</a><label>[field:pubdate function='strftime("%m-%d",@me)'/]</label></li>
+            				{/dede:arclist}
+            				
+            			</ul>
+            		</div>
+					<div class="rightgonglue">
+						<ul>
+            				{dede:arclist typeid='3'  titlelen='24' row='4'  orderby='pubdate'}
+            				<li><a href='[field:arcurl/]' title='[field:fulltitle/]'>[攻略][field:title/]</a></li>
+                            {/dede:arclist}
+            				
+            			</ul>
+					</div>
+            	</div> 
+                
+				<div class="contentfooter">
+					<div class="lunbobg"> 
+						<div id="slideBox" class="slideBox">
+							<div class="bd">
+								<ul>
+									<li><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jietu1.jpg" alt="百易水浒传"></a></li>
+									<li><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jietu2.jpg" alt="街机水浒传"></a></li>
+									<li><a href="" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/jietu3.jpg" alt="水浒传游戏"></a></li>
+								</ul>
+							</div>
+							<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+						</div>
+					</div>
+				</div> 
+				<div style="width:100%;float:left;margin-top:15px;">
+					<div class="link">
+						<div class="linktitl">
+							<ul>
+								<li class="on">友情链接</li>
+								<li>合作伙伴</li>
+								<li>商务合作</li>
+								<li>更多连接</li>
+							</ul>
+							<span style="float:right;padding:5px  5px 0px 0px;">
+								<a target="_block" style="color:#561010;text-decoration:none;" href="">申请友情链接QQ： 306637906</a>
+							</span>
+
+						</div>
+						<div class="linkcontent">
+							<div>
+								{dede:flink row='20' type='text' titlelen="24" typeid="1"}  <a>  [field:link /] </a> {/dede:flink} 
+							</div>
+							<div style="display:none;">
+								{dede:flink row='20' type='text' titlelen="24" typeid="2"}  <a>  [field:link /] </a>{/dede:flink} 
+							</div>
+							<div style="display:none;">
+								{dede:flink row='20' type='text' titlelen="24" typeid="3"}  <a>  [field:link /] </a>{/dede:flink} 
+							</div>
+							<div style="display:none;">
+							    {dede:flink row='20' type='text' titlelen="24" typeid="4"}  <a>  [field:link /] </a>{/dede:flink} 
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!--footer-->
+			 {dede:include filename="footer.htm"/}
+        </div>
+    </div>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/ad.js"></script>
+	<script type="text/javascript">
+		jQuery(".slideBox").slide({ mainCell: ".bd ul", effect: "leftLoop", vis: 3, scroll: 1, autoPlay: true });
+		var tab_li = $(".linktitl ul li");
+            tab_li.click(function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                var index = tab_li.index(this);
+                $("div.linkcontent  > div").eq(index).show().siblings().hide();
+            });
+			(function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){window.location.href="http://shz.100etech.com/m/"}})();
+	</script>
+</html>

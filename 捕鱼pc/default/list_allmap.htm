@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>全站文档地图{dede:pagelist listitem="pageno" listsize="0" runphp='yes'}@me=trim(strip_tags(@me));if (is_numeric(@me)){if (@me!='1') @me='_第'.@me.'页';else @me="";}else @me="";{/dede:pagelist}_{dede:global name='cfg_webname'/}</title> 
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+</head> 
+<body> 
+<h2>全站文档地图</h2>
+{dede:freelist/} 
+{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/} 
+</body> 
+</html>

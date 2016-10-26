@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" >
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" >
+{dede:include filename="head.htm"/}
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+				<div class="header-4">
+					<div class="listdiv">
+						<p class="location">
+							你的位置：{dede:field name='position'/}
+						</p>
+						<div class="articlecontent">
+							<div class="articletop">
+								<h1 style="font-size:26px;">{dede:field.title/}</h1>
+								<p>作者:{dede:field.writer/} 发布时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</p>
+							</div>
+							<div class="articleinfos">
+								{dede:field.body/}<br />
+							</div>
+						</div>
+						<div class="contentpage"style="padding-top:10px;">{dede:pagebreak/} </div>
+						<div class="nextprediv">
+						<span class="pullleft">{dede:prenext get='pre'/}</span>
+						<span class="pullright">{dede:prenext get='next'/}</span>
+						</div>
+						<div class="rcon1">
+			<p class="tgarticle" style="color:#ffac48;">游戏攻略</p>
+			<ul class="likearticle"> 
+			  {dede:arclist typeid='3'  titlelen='50' row='6' orderby='pubdate'}
+				<li><a href='[field:arcurl/]' alt="[field:title/]" title="[field:title/]" >[field:title/]</a></li>
+			{/dede:arclist}
+			</ul>
+		</div>
+					</div>
+				</div>
+				<!--footer-->
+				 {dede:include filename="footer.htm"/}
+            </div>
+        </div>
+    </div>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		 <script src="{dede:global.cfg_templets_skin/}/js/ad.js"></script>
+		<script type="text/javascript">
+		$('#1').addClass('on');
+		</script>
+</body>
+</html>

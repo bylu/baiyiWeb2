@@ -1,0 +1,305 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="author" content="���ۿƼ�" /><title>
+	��K��Ϸ�������˫�ڻ_��K��Ϸ����_�������
+</title><meta name="keywords" content="��K��Ϸ����,��K��Ϸ����,�����������,�����˿�����" /><meta name="description" content="ӭ��������죬��K��Ϸ���غ�����˫�ڡ���ڼ���K��Ϸ�ͳ��Ĵ����" />
+<link type="text/css" href="http://css.lkgame.com/gw/activities/midAutumn/content1.css" rel="stylesheet" />
+<link type="text/css" href="http://css.lkgame.com/gw/activities/midAutumn/base.css" rel="stylesheet" /><link type="text/css" href="http://css.lkgame.com/gw/activities/midAutumn/content.css" rel="stylesheet" /> 
+<script type="text/javascript" src="http://js.lkgame.com/gw/js/jquery/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/topnav.js"></script>
+<script language="javascript" src="http://js.lkgame.com/gw/js/fun.js"></script>
+<script type="text/javascript" src="http://js.lkgame.com/gw/js/lkcm.js"></script>
+ <script type="text/javascript" src="http://js.lkgame.com/gw/js/common.js"></script>
+ <style type='text/css'> .login A{width:50px; padding-left:10px;background:url(); HEIGHT: 48px;}</style>
+</head>
+<body>
+    <form method="post" action="" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="wEPDwUKMTg4MTAyMTU0OA9kFgJmD2QWAgIDD2QWCAIBDxYCHgVjbGFzcwUHbmF2QnRuMWQCBg8WAh4JaW5uZXJodG1sBQEwZAIHDxYCHwEFATBkAggPFgIfAQUBMGRkQQ03My38T4Ja3MHMfcqJEqmXsmo=" />
+
+    
+        
+     <!-- �����ɹ� -->
+<div class="content1-popup" id="awardPopup" style="display:none;">
+	<div class="content1-popupFrame">
+		<p style="height:75px;"></p>
+		<p class="content1-popupWord" id='gongxi'>��ϲ����xxxxx,xxxx,xxx,xxx,xxx��</p>
+		<p style="height:35px;"></p>
+		<a href="javascript:void(0);" class="content1-popupBtn" onclick="Close('#awardPopup')">ȷ&nbsp;&nbsp;&nbsp;��</a>
+	</div>
+	<div class="content1-popupClose" onclick="Close('#awardPopup')"></div>
+</div>
+
+<!-- �±����� -->
+<div class="content1-popup" id="lackPopup" style="display:none;">
+	<div class="content1-popupFrame">
+		<div class="content1-popupFace"></div>
+		<p class="content1-popupWord1">����±����㣬�޷�ʹ�ø�ͷ��</p>
+		<div class="content1-popupBtnBox">
+			<a href="javascript:void(0);" class="content1-popupBtn1" onclick="Close('#lackPopup')">ȷ&nbsp;&nbsp;&nbsp;��</a>
+			<a href="javascript:void(0);" class="content1-popupBtn1" onclick="Close('#lackPopup')">ȡ&nbsp;&nbsp;&nbsp;��</a>
+		</div>
+	</div>
+	<div class="content1-popupClose" onclick="Close('#lackPopup')"></div>
+</div>
+
+<!-- �����±� -->
+<div class="content1-popup" id="usePopup" style="display:none;">
+	<div class="content1-popupFrame">
+		<div class="content1-popupAccount">
+			<div class="content1-popupCake"></div>
+			<div class="content1-popupX"></div>
+			<div class="content1-popupNumBox">
+				<div class="content1-popupNum" id="number">2</div>
+			</div>
+		</div>
+		<p class="content1-popupWord clearColor">��ѡ����<span id="axeID" class="red">��ͨ��ͷ</span>�����ο�����Ҫ����<span id="account" class="red">2</span>���±���</p>
+		<div class="content1-popupBtnBox">
+			<a href="javascript:void(0);" class="content1-popupBtn1" id="sureBtn">ȷ&nbsp;&nbsp;&nbsp;��</a>
+			<a href="javascript:void(0);" class="content1-popupBtn1" onclick="Close('#usePopup')">ȡ&nbsp;&nbsp;&nbsp;��</a>
+		</div>
+	</div>
+	<div class="content1-popupClose" onclick="Close('#usePopup')"></div>
+</div>
+
+
+     
+<div class="top">
+	<ul class="topNav">
+		<li class="nav"><a href="index.aspx" id="index" class="navBtn1">
+			<p class="navWord">EVENT 01</p>
+			<p class="navWord1">������ϲ</p>
+		</a></li>
+		<li class="nav1"></li>
+		<li class="nav"><a href="index1.aspx" id="index1" class="navBtn">
+			<p class="navWord">EVENT 02</p>
+			<p class="navWord1">�𻨻�����</p>
+		</a></li>
+		<li class="nav1"></li>
+		<li class="nav"><a href="index2.aspx" id="index2" class="navBtn">
+			<p class="navWord">EVENT 03</p>
+			<p class="navWord1">��ľ������</p>
+		</a></li>
+		<li class="nav1"></li>
+		<li class="nav2"><a href="index3.aspx" id="index3" class="navBtn">
+			<p class="navWord">EVENT 04</p>
+			<p class="navWord1">��ľ���а���</p>
+		</a></li>
+	</ul>
+</div>
+
+        
+     <div class="head">
+	<div class="headMain">
+		<p>�� �ʱ�䣺2014.9.4��2014.10.8 ��</p>
+	</div>
+</div>
+<div class="content1">
+	<div class="content1Main">
+		<div class="content1login">
+			
+ 
+      <div class="PL8">
+                <div class='login'>HI������<a href='#' class='login' onclick="lkcm.showLogin('activities/midautumn2014/index.aspx');return true;">��¼</a>��</div>   
+                <div id='login1' style='display:none;'></div>
+			</div>
+            <div style='display:none;'>
+                <span id="countYveBing">0</span>
+                <span id="countGuiHua">0</span>
+                <span id="countShuMu">0</span> 
+            </div>
+        
+			<div class="span">����ʱ�����٣�����Ҳ����ס�������±�ѡ��ͷ��������ȡ���ִ󽱣�</div>
+		</div>
+		<div class="PL16">
+			<div class="stress">��ܰ��ʾ</div>
+			<div class="stSpan">�������̻����������ͬ����ľ���������Ÿ��ֽ����ĵ��䣬ͬʱ���л����ù�Ŷ~</div>
+			<div class="clear"></div>
+		</div>
+		<a href="javascript:void(0);" class="axeBtn1" id="axeBtn1"></a>
+		<a href="javascript:void(0);" class="axeBtn2" id="axeBtn2"></a>
+		<a href="javascript:void(0);" class="axeBtn3" id="axeBtn3"></a>
+		<div class="flashBox">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="960" height="708" id="ViewLesson">
+		        <param name="movie" value="flash/tree.swf" />
+		        <param name="quality" value="high" />
+		        <param name="allowScriptAccess" value="always" />		        
+		        <param name="wmode" value="transparent" />
+                <param name="wmode" value="transparent" value="opaque" />
+		        <embed src="flash/tree.swf" wmode="transparent" name="ViewLesson" quality="high" allowscriptaccess="always" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="708"></embed>
+		    </object>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="content2">
+	<div class="content2-main">
+		<div class="content2-mainTitle">
+			<div class="mainTitle-line"></div>
+			<div class="mainTitle-img"></div>
+			<div class="mainTitle-line"></div>
+		</div>
+		<div class="content2-mainRules">
+			<div class="mainRules-step1"><span class="arrow">1</span>ֻ��ͨ��ʹ���±�������ѡ��ͷ���п�������ȡ�������˴󽱣��±�����ͨ�����·�ʽ��ȡ��</div>
+			<div class="stepDetails">1) ǰ����Ϸ�̳ǹ���<a href="ShopItem/index.aspx?Class=4" target="_blank">ȥ������>></a></div>     
+			<div class="stepDetails">2) ����������ת�̡�������<a href="news/info-6332.html">����鿴����>></a></div>
+            <div class="stepDetails">3) �μӵ���K��Ϸƽ̨��ص���Ϸ��������á�<a href="news/info-131742.html">����鿴����>></a></div>
+			<ul class="iconsList">
+				<li><a href="news/info-131941.html" target="_blank" class="list1"></a><p>�������</p></li>
+				<li><a href="news/info-129078.html" target="_blank" class="list2"></a><p>�����˿�</p></li>
+				<li><a href="news/info-128420.html" target="_blank" class="list3"></a><p>����������</p></li>
+				<li><a href="activities/CoinPusher/ForestTest/index.aspx" target="_blank" class="list4"></a><p>ɭ���ƽ��</p></li>
+				<li><a href="news/info-100489.html" target="_blank" class="list5"></a><p>��K�齫</p></li>
+				<li class="li6"><a href="news/info-127314.html" target="_blank" class="list6"></a><p>ʮ����</p></li>
+			</ul>
+			<div class="mainRules-step"><span class="arrow">2</span>��л�õĽ�ҡ���ȯ����ʵʱ���ŵ���Ϸƽ̨����ȡ���ģ�����Ҽ�ʱ��¼���գ�</div>
+			<div class="mainRules-step"><span class="arrow">3</span>����ʵ�ｱ�����ڻ�жλ��������14�������շ��ţ����嵽��ʱ���Կ�ݹ�˾Ͷ��ʱ��Ϊ׼��</div>
+			<div class="mainRules-step"><span class="arrow">4</span>��в������±����𻨵��ߵ���Ч�ھ���2014��10��8��24:00������Ҽ�ʱʹ�ã�</div>
+			<div class="mainRules-step"><span class="arrow">5</span>��Ա�����κ����ʣ�����ϵ���߿ͷ��򲦴�ͷ��绰400-0555-909��ѯ��</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="h22"></div>
+	<div class="zt">
+		<P>�����㣬����K Copyright 2009 All Rights Reserved ���ۿƼ�</P>
+		<p><a href="#" target="_blank">�����α���[2011]C-CBG003��</a>  <a href="#" target="_blank">������[2010]��0415-001��</a>  <a href="#" target="_blank">�������������� 45030000277</a>  <a href="#" target="_blank">��ֵ����ҵ��Ӫ���֤����B2-20110003</a> </p>
+		<p>������Ϸ�Ҹ棺���Ʋ�����Ϸ �ܾ�������Ϸ ע�����ұ��� ������ƭ�ϵ� �ʶ���Ϸ���� ������Ϸ���� �������ʱ�� ���ܽ�������</p>
+	</div>
+</div>
+<div style="display:none;">
+<script type="text/javascript" src="http://js.lkgame.com/gw/js/visit.js"></script>
+</div>
+
+<script type="text/javascript" src="http://js.lkgame.com/gw/activities/midAutumn/ie6-png.js"></script>
+    </form>
+    
+        
+     <script type="text/javascript">
+         function getFlashMovieObject(movieName) {
+             if (window.document[movieName]) {
+                 return window.document[movieName];
+             }
+             if (navigator.appName.indexOf("Microsoft Internet") == -1) {
+                 if (document.embeds && document.embeds[movieName])
+                     return document.embeds[movieName];
+             } else {
+                 return document.getElementById(movieName);
+             }
+         }
+
+
+         var btn1 = document.getElementById("axeBtn1");
+         var axeID = document.getElementById("axeID");
+         var account = document.getElementById("account");
+         var number = document.getElementById("number");
+         var sure = document.getElementById("sureBtn");
+         var num = 1;
+
+         // �����ͨ��ͷ
+         btn1.onclick = function () {
+             if (IsLogin()) {
+                 number.innerHTML = "2"
+                 axeID.innerHTML = "��ͨ��ͷ"
+                 account.innerHTML = "2"
+                 Pop('#usePopup');
+                 num = 1;
+             }
+         }
+         // ��������ͷ
+         var btn2 = document.getElementById("axeBtn2");
+         btn2.onclick = function () {
+             if (IsLogin()) {
+                 number.innerHTML = "5"
+                 axeID.innerHTML = "�����ͷ"
+                 account.innerHTML = "5"
+                 Pop('#usePopup');
+                 num = 2;
+             }
+         }
+         // ����ƽ�ͷ
+         var btn3 = document.getElementById("axeBtn3");
+         btn3.onclick = function () {
+             if (IsLogin()) {
+                 number.innerHTML = "15"
+                 axeID.innerHTML = "�ƽ�ͷ"
+                 account.innerHTML = "15"
+                 Pop('#usePopup');
+                 num = 3;
+             }
+         }
+
+         function IsLogin() {
+             var isLogin = CurrentUserIsLogin();    // �жϵ�¼ 
+             if (isLogin != true) {
+                 lkcm.showLogin(window.location.href); return false;
+             }
+             return true;
+         }
+         // ��������е�ȷ����ť��ִ��flash
+         sure.onclick = function () {
+             Close('#usePopup');  
+             var isLogin = CurrentUserIsLogin();    // �жϵ�¼ 
+             if (isLogin != true) {
+                 lkcm.showLogin(window.location.href); return;
+             }
+             if (parseInt($("#countYveBing").html()) < parseInt(account.innerHTML)) {
+                 Pop("#lackPopup");
+                 return false;
+             }
+             var times = (new Date()).valueOf(); 
+             $.ajax({
+                 url: "Index.aspx?MethodName=Exchange&time=" + times + "&count=" + account.innerHTML,
+                 type: "POST",
+                 dataType: "json",
+                 success: function (data) {
+                     //alert(obj2str(data));  
+                     var json = eval(data);
+                     if (json.ret == 0) {
+                         var model = eval("(" + json.msg + ")");
+
+                         $("#countYveBing").html(model.yvebing);
+                         $("#countGuiHua").html(model.guihua);
+                         $("#countShuMu").html(model.shumu);
+                         $("#gongxi").html("��ϲ����" + model.award + ",��ľ" + model.trees + "��");
+                         $("#login1").html("hi��" + model.nickname + "���±�*" + model.yvebing + "����*" + model.guihua + "����ľ*" + model.shumu + " <a href='~/Logout.ashx?tc=1' title='�˳�'>�˳�</a>");
+                         getFlashMovieObject("ViewLesson").callAS(num);
+                     }
+                     else {
+                         if (json.msg == "nolock") { lkcm.showLogin(window.location.href); }
+                         else { alert(json.msg); }
+                     }
+
+                 },
+                 error: function (XMLHttpRequest, textStatus, errorThrown) {
+                     alert("���ݼ���ʧ��!" + XMLHttpRequest + "#" + textStatus + "#" + errorThrown);
+                     try { getFlashMovieObject("FlashID").ReturnFunc(); } catch (ex) { alert(ex); }
+                 }
+             })
+
+
+         }
+
+       
+
+         // flash����
+         function callJS() {
+             Pop('#awardPopup');$("#login2").html($("#login1").html());
+         }
+
+         // ����
+         function Pop(target) {
+             fun.showCenterWindow($(target));
+         }
+         function Close(target) {
+             fun.closeCenterWindow($(target));
+         }
+</script>
+
+</body>
+</html>
+

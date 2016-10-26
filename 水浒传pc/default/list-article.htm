@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{dede:field.seotitle/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}"/>
+{dede:include filename="head.htm"/}
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+				<div class="contenttop">
+            		<div class="leftimg" style="background:none;">
+						<p class="location">
+							你的位置：{dede:field name='position'/}
+						</p>
+					</div>
+                    <div class="rightdiv">
+                    	<a href="http://download.6513.com/phoneshz/SHZ_GW.apk" rel="nofollow"><p class="anzhuo"></p></a>
+						<a href="https://itunes.apple.com/cn/app/bai-yi-shui-hu-chuan-jie-ji/id993585766?mt=8" target="_blank" rel="nofollow"><p class="ios"></p></a>
+						<a href="http://download.6513.com/phoneshz/SHZ_GW.ipa" rel="nofollow" target="_blank" ><p class="yueyu"></p></a>
+						<div class="erewimabg">
+							<img src="{dede:global.cfg_templets_skin/}/images/erweima.png" alt="水浒传官网" />				
+						</div>
+                    </div>
+            	</div>
+				<div class="header-4">
+					<div class="listdiv">
+						<div class="listcontent">
+							<ul class="showlist">
+								{dede:list pagesize='19'}
+									<li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a><span class="datetime">[[field:pubdate function="GetDateTimeMK(@me)" /]]</span></li>
+                              	  {/dede:list}
+							</ul>
+							<div class="page">
+								<ul>
+									{dede:pagelist istitem="index,pre,next,end,option,info," listsize="5"/}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			<!--footer-->
+				 {dede:include filename="footer.htm"/}
+        </div>
+    </div>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	 <script src="{dede:global.cfg_templets_skin/}/js/ad.js"></script>
+	 <script type="text/javascript">(function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){window.location.href="http://shz.100etech.com/m/"}})();
+	</script>
+</body>
+</html>

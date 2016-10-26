@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{dede:field.title/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" >
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" >
+{dede:include filename="head.htm"/}
+	<div class="wrap">
+    	<div class="bg-header1">
+			<div class="header-2"></div>
+            <div class="header-3">
+				<div class="contenttop">
+            		<div class="leftimg" style="background:none;">
+						<p class="location">
+							你的位置：{dede:field name='position'/}
+						</p>
+					</div>
+                    <div class="rightdiv">
+                    	<a href="http://download.6513.com/phoneshz/SHZ_GW.apk" rel="nofollow">  <p class="anzhuo"></p></a>
+						<a href="https://itunes.apple.com/cn/app/bai-yi-shui-hu-chuan-jie-ji/id993585766?mt=8" rel="nofollow" target="_blank"><p class="ios"></p></a>
+						<a href="http://download.6513.com/phoneshz/SHZ_GW.ipa" rel="nofollow" target="_blank" ><p class="yueyu"></p></a>
+						<div class="erewimabg">
+							<img src="{dede:global.cfg_templets_skin/}/images/erweima.png" />				
+						</div>
+                    </div>
+            	</div>
+				<div class="header-4">
+					<div class="listdiv">
+						<div class="articlecontent">
+							<div class="articletop">
+								<h2>{dede:field.title/}</h2>
+								<p>作者:{dede:field.writer/} 发布时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</p>
+							</div>
+							<div class="articleinfos">
+								{dede:field.body/}<br />
+							</div>
+						</div>
+						<div class="contentpage"style="padding-top:10px;">{dede:pagebreak/} </div>
+						<div class="nextprediv">
+							<span class="pullleft">{dede:prenext get='pre'/}</span>
+							<span class="pullleft">{dede:prenext get='next'/}</span>
+						</div>
+						<div class="rcon1 mt10">
+			<p class="tgarticle" style="color:#ffac48;">游戏攻略</p>
+			<ul class="likearticle"> 
+			  {dede:arclist typeid='3'  titlelen='50' row='6' orderby='pubdate'}
+				<li><a href='[field:arcurl/]' alt="[field:title/]" title="[field:title/]" >[field:title/]</a></li>
+			{/dede:arclist}
+			</ul>
+		</div>
+					</div>
+				</div>
+            </div>
+			<!--footer-->
+				{dede:include filename="footer.htm"/}
+        </div>
+    </div>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	 <script src="{dede:global.cfg_templets_skin/}/js/ad.js"></script>
+	 <script type="text/javascript">(function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";if(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM){window.location.href="http://shz.100etech.com/m/"}})();
+	</script>
+</body>
+</html>

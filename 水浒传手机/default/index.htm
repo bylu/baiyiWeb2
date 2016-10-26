@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Cache-Control" content="must-revalidate,no-cache,no-transform">
+<meta content="mobiSiteGalore" name="Generator" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta name="format-detection" content="telephone=no">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/swiper.min.css"  type="text/css" >
+</head>
+<style type="text/css">
+	*{padding:0;margin:0;}
+	body{background-color:#e3e7e6;font:100%/1.6em Helvetica, Arial, sans-serif;}
+	a{cursor:pointer;}
+	img{width:100%;}
+	header{width:100%;background-color:#282832;}
+	.logo{width:24.5%;margin:0px auto;}
+	.catbar{position: absolute;right: 5px;top: 8px;width: 30px;height: 17px;line-height: 17px;font-size: 12px;padding: 3px 8px 3px 28px;background: url('{dede:global.cfg_templets_skin/}/images/list-icons.png') 0 center no-repeat #111;border: 1px solid #333333;-webkit-border-radius: 5px;-moz-border-radius: 5px;-o-border-radius: 5px;border-radius: 5px;color: #ffffff;cursor:pointer;opacity:0.5;}
+	nav{width:88%;position:absolute;top:35px;padding:6%;background-color:#444444;opacity:0.9;z-index:2;}
+	nav ul li{list-style:none;border-bottom:1px solid #333333;padding-bottom:0.5%;}
+	nav ul li a{color:#fff;font-size:0.85rem;cursor:pointer;text-decoration:none;}
+	main{background-color:#e3e7e6;}
+	.useropera{width:96%;float:left;padding: 2% 2% 0% 2%;}
+	.useropera .gamedownload{width:42%;margin:0% 2%;float:left;display:inline;color:#fff; padding:2% 0%;text-align:center;text-decoration:none;background-color:#2d3a66;border-radius:5px;font-family:'楷体';}
+	.useropera .gamelibao{width:42%;margin:0% 2%;float:right;display:inline;color:#fff; padding:2% 0%;text-align:center;text-decoration:none;background-color:#6a2e2e;border-radius:5px;font-family:'楷体';} 
+	
+	.articlelistshow{width:100%;float:left;margin-top:2%;}
+	.sortnames{font-size:1.2rem;height:20px;background-color:#3b3b43;padding:1% 0% 2% 2%;color:#e3e7e6;font-family:'楷体';}
+	.newsArticleList{width:100%;float:left;}
+	.newsArticleList li{padding:2% 0% 2% 3%;width:97%;float:left;background-color:#fff;font-size:1rem;color:#5c5c5c;}
+	.newsArticleList li a{color:#5c5c5c;}
+	.newsArticleList li:nth-child(2n){background-color:#dfdfe1;}
+	.newsArticleList li .newTit{width:15rem;display:block;float:left;font-size:0.985rem;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+	.newsArticleList li .newDate{float:right;margin-right:5%;font-size:0.985rem;width:auto;}
+	
+	.articlelistGameGl,.gameGlList,.shzpics{width:100%;float:left;}
+	.gameGlList li{padding:2% 0% 2% 3%;width:97%;float:left;background-color:#fff;font-size:1rem;color:#5c5c5c;}
+	.gameGlList .gamepic{width:30%;padding:2% 2% 2% 1%;float:left;display:inline;}
+	.gameGlList .gameintro{width:65%;float:left;display:inline;overflow:hidden;padding:2% 0%;}
+	.gameGlList .gameintro a{color:#5c5c5c;text-description:none;}
+	.gameGlList .gameintro .gametitle{color:#5c5c5c;font-size:0.85rem;width:100%;float:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+	.gameGlList .gameintro .gamedescription{color:#333;font-size:0.75rem;width:100%;float:left;display:-webkit-box;text-overflow:ellipsis;white-space:pre-wrap;word-break:break-word;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+	
+	.shzpiclist{width:96%;float:left;overflow:hidden;margin-top:2%;padding:0% 2%;}
+	.shzpiclist .picshow{width:46%;padding:2%;float:left;text-align:center;overflow:hidden;}
+	.shzpiclist .picshow a{color:#5c5c5c;}
+	.shzpiclist .picshow .picimg{padding:2%;width:96%;float:left;}
+	.shzpiclist .picshow span{width:100%;float:left;font-size:0.85rem;float:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+	
+	footer{width:100%;float:left;background-color:#3b3b43;padding:2% 0% 25% 0%;;overflow:hidden;}
+	footer p{width:100%;text-align:center;color:#e3e7e6;font-size:1rem;font-weight:bold;}
+	footer p a{color:#e3e7e6;text-decoration:none;}
+	.footergamedownload{width:100%;float:left;padding:2% 0% 2% 0%;position:fixed;bottom:0px;background-color:#474747;opacity:.9;}
+	.footergamedownload .shzicon{width:55px;float:left;margin-left:5px;}
+	.footergamedownload .shzintro{width:50%;float:left;margin-left:10px;color:#fff;}
+	.footergamedownload .shzintro span{width:100%;float:left;font-size:0.925rem;float:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+	.footergamedownload .shzintro label{width:100%;float:left;font-size:0.75rem;float:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+	.footergamedownload .shzdownbtn{width:80px;font-weight:600;float:right;border-radius:.4rem;text-align:center;padding:1% 0;margin-right:2%;background-color:#ffff00;color:#000;font-size:0.85rem;}
+	.bgtip{width:100%;height:157px;position:fixed;right:2%;top:2%;z-index:99999;}
+	.bgtip .bg_tip{width:60%;position:absolute;right:2%;z-index:10000000}
+	</style>
+<body>
+	{dede:include filename="head.htm"/}
+	<main>
+		<section>
+			<div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/dabg.jpg" data-original="{dede:global.cfg_templets_skin/}/images/dabg.jpg" /></div>
+						<div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/bg2.jpg"  data-original="{dede:global.cfg_templets_skin/}/images/bg2.jpg" /></div>
+						<div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/bg3.jpg"  data-original="{dede:global.cfg_templets_skin/}/images/bg3.jpg" /></div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+					<!-- 如果需要导航按钮 -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+				<div class="useropera">
+					<a class="gamedownload shzdown" href="javascript:void(0);">游戏下载</a>
+					<a class="gamelibao" href="/m/libao">礼包领取</a>	
+				</div>
+				<div class="articlelistshow">
+					<p class="sortnames">{dede:type typeid='2'}[field:typename /]{/dede:type}</p>
+					<article>
+						<ul class="newsArticleList">
+                        	{dede:arclist typeid='2'  titlelen='50' row='5'  orderby='pubdate'}
+							<li>
+								<a href="[field:arcurl/]"><h2 class="newTit">[field:title/]</h2><span class="newDate">[field:pubdate function='strftime("%m-%d",@me)'/]</span></a>
+							</li>
+							{/dede:arclist}
+						</ul>
+					</article>
+				</div>
+				<div class="articlelistGameGl">
+					<p class="sortnames">{dede:type typeid='1'}[field:typename /]{/dede:type}</p>
+					<article>
+						<ul class="gameGlList">
+                        	{dede:arclist typeid='1'  titlelen='50' row='5'  orderby='pubdate'}
+							<li>
+								<div class="gamepic">
+									<a  href="[field:arcurl /]"><img src="[field:litpic/]" data-original="[field:litpic/]" /></a>
+								</div>
+								<div class="gameintro">
+									<a  href="[field:arcurl /]">
+										<h2 class="gametitle">[field:title/]</h2>
+										<p class="gamedescription">[field:description function='cn_substr(@me,150)'/]......</p>
+									</a>
+								</div>
+							</li>
+							 {/dede:arclist}
+						</ul>
+					</article>
+				</div>
+				<div class="shzpics">
+					<p class="sortnames">{dede:type typeid='3'}[field:typename /]{/dede:type}</p>
+					<div class="shzpiclist">
+                    	{dede:arclist typeid='3'  titlelen='50' row='2'  orderby='pubdate'}
+						<div class="picshow">
+							<a  href="[field:arcurl /]">
+								<div class="picimg"><img src="[field:litpic/]"  data-original="[field:litpic/]" /></div>
+								<span>[field:title/]</span>
+							</a>
+						</div>
+						{/dede:arclist}
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	{dede:include filename="footer.htm"/}
+	<div class="footergamedownload">
+		<a class="shzdown" href="javascript:void(0);">
+			<div class="shzicon"><img src="{dede:global.cfg_templets_skin/}/images/shzicon.png"></div>
+			<div class="shzintro"><span>百易水浒传</span><label>百分百还原，街机水浒传！</label></div>
+			<div class="shzdownbtn">点击下载</div>
+		</a>
+	</div>
+	<!--微信中下载提示-->
+	<div class="bgtip" id="bgtips" style="display:none;">
+		<div class="bg_tip" id="bg_4_tip">
+			<img src="{dede:global.cfg_templets_skin/}/images/ios.png" alt="街机千炮捕鱼ios版" style="width:100%;">
+		</div>
+	</div>
+	<div class="bgtip" id="bgtips2" style="display:none;">
+		<div class="bg_tip" id="bg_5_tip">
+			<img src="{dede:global.cfg_templets_skin/}/images/anzhuo.png" alt="街机千炮捕鱼android版"  style="width:100%;">
+		</div>
+	</div>
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/swiper.min.js"></script>
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery.lazyload.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".catbar").click(function(){
+				$("nav").slideToggle();
+			});
+			$('img').lazyload();
+		});
+		
+		var mySwiper = new Swiper ('.swiper-container', {
+			direction: 'horizontal',
+			loop: true,
+			autoplay:5000,
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+			// 如果需要前进后退按钮
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev'
+		}) 
+		 //判断是否是微信扫描  
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == "micromessenger") {
+        $(".shzdown").bind('click', function(){
+            if (checkIsApple()) {
+				document.getElementById("bgtips").style.display="block";  
+			}else{
+				document.getElementById("bgtips2").style.display="block";
+			}       
+        }); 
+    }else{
+       $(".shzdown").bind('click', function(){
+             if (checkIsApple()) {
+                    window.location.href = "itms-services://?action=download-manifest&amp;url=https://dn-phoneshz.qbox.me/shz_gw.plist";
+              }else{
+                    window.location.href = "http://download.6513.com/phoneshz/SHZ_GW.apk";
+              }         
+        });   
+    }
+    
+  //判断是否是苹果设备
+      function checkIsApple(){
+         var u = navigator.userAgent, app = navigator.appVersion;
+         var ios=!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+         var iPad=u.indexOf('iPad') > -1;
+         var iPhone=u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1;
+         if(ios || iPad || iPhone){
+            return true;
+         }else{
+            return false;
+         }
+    }
+	 
+   (function(){var ua=navigator.userAgent.toLowerCase();var bIsIpad=ua.match(/ipad/i)=="ipad";var bIsIphoneOs=ua.match(/iphone os/i)=="iphone os";var bIsAndroid=ua.match(/android/i)=="android";var bIsWM=ua.match(/windows mobile/i)=="windows mobile";
+	if(!(bIsIpad||bIsIphoneOs||bIsAndroid||bIsWM)){window.location.href="http://shz.100etech.com"}})();
+	</script>
+</body>
+</html>
