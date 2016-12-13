@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a><span class="datetime">[2015-09-01 08:00:00]</span></li>

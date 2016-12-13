@@ -1,0 +1,4 @@
+INSERT INTO `dede_kwkeyword` VALUES('1','12','软件下载','0','0','1','1414208658');
+INSERT INTO `dede_kwkeyword` VALUES('2','12','工具下载','0','0','1','1414208694');
+INSERT INTO `dede_kwkeyword` VALUES('3','12','浏览器','0','0','1','1414208712');
+INSERT INTO `dede_kwkeyword` VALUES('4','12','播放器','0','0','0','0');

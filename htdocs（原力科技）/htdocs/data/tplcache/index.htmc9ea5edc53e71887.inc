@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",65,91);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",132,159);
+$z[1][4]['name']="cfg_keywords";
+$z[2]=Array("global","",199,229);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("include","",235,270);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("global","",431,463);
+$z[4][4]['name']="cfg_templets_skin";
+$z[5]=Array("global","",999,1031);
+$z[5][4]['name']="cfg_templets_skin";
+$z[6]=Array("global","",1166,1198);
+$z[6][4]['name']="cfg_templets_skin";
+$z[7]=Array("global","",1713,1745);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",1899,1931);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",2448,2480);
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("global","",2615,2647);
+$z[10][4]['name']="cfg_templets_skin";
+$z[11]=Array("global","",3084,3116);
+$z[11][4]['name']="cfg_templets_skin";
+$z[12]=Array("arclist","\r\n				<li>\r\n					<a href='[field:arcurl/]' title='[field:title /]'>\r\n						<img src='[field:litpic/]' height=\"130\" width=\"218\" alt=\"\">\r\n						<h5>[field:title/]</h5>\r\n						<p>\r\n							<span>[field:shorttitle/]</span>\r\n						</p>\r\n					</a>\r\n				</li>\r\n				",3396,3733);
+$z[12][4]['typeid']="1";
+$z[12][4]['titlelen']="50";
+$z[12][4]['row']="5";
+$z[12][4]['orderby']="click";
+$z[13]=Array("arclist","\r\n					<li>\r\n						<span class=\"time\">[field:pubdate function='strftime(\"%m-%d\",@me)'/]</span>\r\n						<a href=\"[field:arcurl/]\">[field:title/]</a>\r\n					</li>\r\n                  ",4127,4386);
+$z[13][4]['orderby']="pubdate";
+$z[13][4]['titlelen']="30";
+$z[13][4]['typeid']="2";
+$z[13][4]['row']="3";
+$z[14]=Array("arclist","\r\n						<li><a href=\"[field:arcurl/]\">[field:title/]</a></li>\r\n                        ",4819,4989);
+$z[14][4]['orderby']="hot";
+$z[14][4]['titlelen']="30";
+$z[14][4]['typeid']="6,7,8,9";
+$z[14][4]['row']="4";
+$z[15]=Array("include","",6007,6042);
+$z[15][4]['filename']="foot.htm";
+
+?>

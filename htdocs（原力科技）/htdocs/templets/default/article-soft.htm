@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+{dede:include filename="head.htm"/}
+<script>$('#1').addClass('current');</script>
+<section id="banner">
+	<div class="bd">
+		<ul>
+			<li id="b1" class="darkcolor" style="background-image: url({dede:global.cfg_templets_skin/}/images/banner-1.jpg);">
+				<div class="intro">
+					<h2 id="gametitles">千炮捕鱼</h2>
+					<dl class="online">
+					</dl>
+					<p id="gamedescription"></p>
+					<dl class="download">
+						
+						<dd>
+							<a gname="texas_poker" title="iphone" href="https://itunes.apple.com/cn/app/jie-ji-qian-pao-bu-yu/id948569950?mt=8" class="downlink iphone" target="_blank">iPhone</a>
+							<a gname="texas_poker" title="android" href="http://download.6513.com/phoneGame/108450BY.apk" class="downlink android">Android</a>
+							<span class="ewm"><img src="{dede:global.cfg_templets_skin/}/pic/80.png" height="80" width="80" alt=""></span>
+						</dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<section id="main" class="area promain">
+	<div class="location">
+		<span class="qlink"><a href="/" class="home"></a> <em></em>{dede:field name='position'/}</span>
+		<a href="/youxijieshao" class="goback">返回列表</a>
+	</div>
+	<section class="area combox">
+		<section class="nleft">
+			<article class="artbox">
+				<h1 id="gametitle">{dede:field.title/}</h1>
+				<div class="art_date"><span>{dede:field.pubdate function="MyDate('Y-m-d',@me)"/}</span></div>
+				<p>
+				{dede:field.introduce/}
+				</p>
+			</article>
+			 <div class="prev_next">
+				<p><label>{dede:prenext get='pre'/}</p>
+				<p><label>{dede:prenext get='next'/}</p>
+			</div> 
+		</section>
+		<section class="nright">
+			<div class="topic">
+				<ul class="topiclist">
+					<li>
+						<h5><a href="/guanyuwomen"><span>人在百易</span></a></h5>
+						<div class="topic_img"><a href="/guanyuwomen"><img src="{dede:global.cfg_templets_skin/}/pic/hrpic3.jpg" height="134" width="230" alt=""></a></div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</section>
+</section>
+{dede:include filename="foot.htm"/}
+<script type="text/javascript">
+	$(document).ready(function(){
+		 var  gametitle=$("#gametitle").html();
+		 if(gametitle.indexOf('街机千炮捕鱼')!= -1){
+			$("#b1").css("background-image","url({dede:global.cfg_templets_skin/}/images/banner-1.jpg)");
+			$("#gametitles").html("街机千炮捕鱼");
+		 }else if(gametitle.indexOf('斗地主')!= -1){
+		    $("#b1").css("background-image","url({dede:global.cfg_templets_skin/}/images/banner-2.jpg)");
+			$("#gametitles").html("斗地主");
+		 }else if(gametitle.indexOf('二人麻将')!= -1){
+		    $("#b1").css("background-image","url({dede:global.cfg_templets_skin/}/images/banner-3.jpg)");
+			$("#gametitles").html("二人麻将");
+		 }else if(gametitle.indexOf('水浒传')!= -1){
+		    $("#b1").css("background-image","url({dede:global.cfg_templets_skin/}/images/banner-4.jpg)");
+			$("#gametitles").html("水浒传");
+		 }else if(gametitle.indexOf('百易斗牛')!= -1){
+			 $("#b1").css("background-image","url({dede:global.cfg_templets_skin/}/images/banner-5.jpg)");
+			$("#gametitles").html("百易斗牛");
+			$("#b1").find(".iphone ").attr("href","javascript:void(0);");
+			$("#b1").find(".android").attr("href","javascript:void(0);");
+			$("#b1").find(".ewm img").attr("src","/templets/default/pic/niu116.png");
+		 }
+	});
+  
+   
+
+</script>
+</body>
+</html>

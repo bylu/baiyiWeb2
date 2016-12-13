@@ -1,0 +1,1 @@
+<h2 class="game_t">[field:typename/]</h2>

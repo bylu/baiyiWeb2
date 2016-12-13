@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+{dede:include filename="head.htm"/}
+<script>$('#1').addClass('current');</script>
+<section class="gamebanner"></section>
+<section id="main" class="area">
+	<div class="location">
+		<span class="qlink"><a href="" class="home"></a> <em></em> <label>{dede:field name='position'/}</label></span>
+		{dede:type typeid='1'} 
+			<h2 class="game_t">[field:typename/]</h2>
+		{/dede:type} 
+	</div>
+	<section id="protab" class="area combox">
+		<section class="gleft">
+			<nav id="ptabt" class="gnav">
+				<ul class="gnavlist">
+					<li class="on"><a href="javascript:void(0);">iPhone <i class="iphone"></i></a></li>
+					<li><a href="javascript:void(0);">Android <i class="android"></i></a></li>
+				</ul>
+			</nav>
+		</section>
+		<section id="ptabcon" class="gright">
+			<div class="gamelistcon">
+				<ul class="gamelist cl">
+					{dede:list pagesize='9' orderby='click'}
+					<li title="[field:title/]">
+						<h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+						<div class="gamepic"><a href="[field:arcurl/]" title="[field:title/]"><img src='[field:litpic/]' height="195" width="331" alt="[field:title/]"></a></div>
+						<div class="gamelink">
+							<span class="appstore">
+								<a href="https://itunes.apple.com/cn/app/jie-ji-qian-pao-bu-yu/id948569950?mt=8" target="_blank">App Store</a>
+							</span>
+							<span class="ewmlink">
+								<a href="javascript:void(0);">二维码下载</a>
+								<i><img src="/templets/default/pic/116.png" alt=""></i>
+							</span>
+						</div>
+					</li>
+					{/dede:list}
+				</ul>
+				<div class="pages">
+					<ul>{dede:pagelist istitem="index,pre,next,end,option,info," listsize="5"/}</ul>
+				</div>
+			</div>
+			<div class="gamelistcon">
+				<ul class="gamelist cl">
+					{dede:list pagesize='9' orderby='click'}
+					<li  title="[field:title/]">
+						<h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+						<div class="gamepic"><a href="[field:arcurl/]" title="[field:title/]"><img src='[field:litpic/]' height="195" width="331" alt="[field:title/]"></a></div>
+						<div class="gamelink">
+							<span class="android">
+								<a href="http://download.6513.com/phoneGame/8888903BY.apk">下载游戏</a>
+							</span>
+							<span class="ewmlink"><a href="#">二维码下载</a><i><img src="/templets/default/pic/116.png" alt=""></i></span>
+						</div>
+					</li>
+					{/dede:list}
+				</ul>
+				<div class="pages">
+				<ul>{dede:pagelist istitem="index,pre,next,end,option,info," listsize="5"/}</ul>
+			</div>
+			</div>
+		</section>
+	</section>
+</section>
+
+<script type="text/javascript">
+$("#protab").slide({ titCell:"#ptabt li", mainCell:"#ptabcon",trigger:"click",delayTime:0 });
+$(document).ready(function(){
+	$("#ptabcon li").each(function(i){
+		var softname=$(this).attr("title");
+		if(softname=="百易斗牛"){
+			$(this).find(".android a").attr("href","javascript:void(0);");
+			$(this).find(".appstore a").attr("href","javascript:void(0);");
+			$(this).find(".ewmlink img").attr("src","/templets/default/pic/niu116.png");
+		} 
+	});
+});
+</script>
+<footer>
+	
+</footer>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

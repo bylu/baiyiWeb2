@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+{dede:include filename="head.htm"/}
+<script>$('#5').addClass('current');</script>
+<section class="joinbanner"></section>
+<section id="main" class="area">
+	<div class="location">
+		<span class="qlink"><a href="/" class="home"></a> <em></em> <label>{dede:field name='position'/}</label></span>
+		<h2 class="hr_t">原力招聘</h2>
+	</div>
+	<section class="area combox">
+		<section class="nleft">
+			<div class="session">
+				<div class="hrtabt">
+					<ul class="cl">
+						<li class="on"><a href="javascript:void(0);">技术类</a></li>
+						<li><a href="javascript:void(0);">运营类</a></li>
+						<li><a href="javascript:void(0);">设计类</a></li>
+						<li><a href="javascript:void(0);">职能类</a></li>
+					</ul>
+				</div>
+				<div class="hrtabcon">
+					<div class="hrtabc">
+						<dl class="jobinfo">
+						    {dede:arclist typeid='6' orderby='pubdate' titlelen='50' row='9'}
+							<dt><a href="[field:arcurl/]" title="[field:title/]">[field:title /]</a><em></em></dt>
+							<dd>
+								[field:description function='cn_substr(@me,300)'/]......<br/>
+								<a href="[field:arcurl/]" title="[field:title/]" style="float:right;margin-right:10px;">查看更多</a>
+							</dd>
+							
+							{/dede:arclist}
+						</dl>
+							
+							
+					</div>
+					<div class="hrtabc">
+						<dl class="jobinfo">
+							 {dede:arclist typeid='7' orderby='pubdate' titlelen='50' row='9'}
+							<dt><a href="[field:arcurl/]" title="[field:title/]">[field:title /]</a><em></em></dt>
+							<dd>
+								[field:description function='cn_substr(@me,300)'/]......<br/>
+								<a href="[field:arcurl/]" title="[field:title/]" style="float:right;margin-right:10px;">查看更多</a>
+							</dd>
+							
+							{/dede:arclist}
+						</dl>
+					</div>
+					<div class="hrtabc">
+						<dl class="jobinfo">
+							 {dede:arclist typeid='8' orderby='pubdate' titlelen='50' row='9'}
+							<dt><a href="[field:arcurl/]" title="[field:title/]">[field:title /]</a><em></em></dt>
+							<dd>
+								[field:description function='cn_substr(@me,300)'/]......<br/>
+								<a href="[field:arcurl/]" title="[field:title/]" style="float:right;margin-right:10px;">查看更多</a>
+							</dd>
+						
+							{/dede:arclist}
+						</dl>
+					</div>
+					<div class="hrtabc">
+						<dl class="jobinfo">
+							 {dede:arclist typeid='9' orderby='pubdate' titlelen='50' row='9'}
+							<dt><a href="[field:arcurl/]" title="[field:title/]">[field:title /]</a><em></em></dt>
+							<dd>
+								[field:description function='cn_substr(@me,300)'/]......<br/>
+								<a href="[field:arcurl/]" title="[field:title/]" style="float:right;margin-right:10px;">查看更多</a>
+							</dd>
+							
+							{/dede:arclist}
+						</dl>
+					</div>
+				</div>
+			</div>
+		</section>
+		{dede:include filename="rightbar.htm"/}
+	</section>
+</section>
+<script type="text/javascript">
+$(".session").slide({ titCell:".hrtabt li", mainCell:".hrtabcon",trigger:"click",delayTime:0 });
+</script>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

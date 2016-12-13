@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+{dede:include filename="head.htm"/}
+ <style type="text/css">
+        td {
+            border: solid #eeeeee;
+            border-width: 0px 1px 1px 0px;
+            padding-left: 10px;
+        }
+
+        table {
+            border: solid #eeeeee;
+            border-width: 1px 0px 0px 1px;
+            width: 560px;
+			margin:0px auto;
+			margin-top:20px;
+        }
+
+        tr {
+            line-height: 45px;
+        }
+    </style>
+<section class="newsbanner"></section>
+<section id="main" class="area" style="min-height:700px;">
+	<div class="location">
+		{dede:type typeid='10'}  
+			<h2 class="news_t">[field:typename/]</h2>
+		{/dede:type} 
+	</div>
+	<section class="area combox">
+<table>
+			<tr>
+				<td>账号</td>
+				<td id="accounts"></td>
+			</tr>
+			<tr>
+				<td>手机号</td>
+				<td id="phoneNo"></td>
+			</tr>
+			<tr>
+				<td>真实姓名</td>
+				<td id="realName"></td>
+			</tr>
+		</table>
+
+	</section>
+</section>
+{dede:include filename="foot.htm"/}
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+			$.post(
+				"/api/uCenter",
+				{},
+				function(json){
+					$code=json.code;
+					if($code!=0){
+						window.location.href="/login/";
+					}
+					$("#accounts").html(json.data.accounts);
+					$("#phoneNo").html(json.data.phoneNo);
+					$("#realName").html(json.data.realName);
+				},
+				"json"
+			)
+    });
+</script>
+</body>
+</html>

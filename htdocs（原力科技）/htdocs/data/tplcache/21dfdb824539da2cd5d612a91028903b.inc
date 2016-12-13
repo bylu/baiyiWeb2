@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]"><label>.[¹¥ÂÔ]</label><span>[field:title/]</span></a><span class="time">[field:pubdate function='strftime("%m-%d",@me)'/]</span></li>

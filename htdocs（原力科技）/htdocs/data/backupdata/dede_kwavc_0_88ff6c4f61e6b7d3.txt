@@ -1,0 +1,1 @@
+INSERT INTO `dede_kwavc` VALUES('2','http://www.idcquan.com/','0','<title>[标题]</title>','','',' <!-- 文章内容 -->[内容]<!-- @end 文章内容 -->','');

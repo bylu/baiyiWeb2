@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+{dede:include filename="head.htm"/}
+<script>$('#10').addClass('current');</script>
+<style type="text/css">
+        .login-form {
+            width: 660px;
+            height: 600px;
+            margin: 0 auto;
+            background-color: #f8fdff;
+            border: 1px solid #eeeeee;
+			margin-top:20px;
+        }
+
+        .item {
+            line-height: 65px;
+            width: 100%;
+            float: left;
+        }
+
+        .name {
+            width: 120px;
+            text-align: right;
+            float: left;
+        }
+
+        .input {
+            padding-left: 15px;
+            margin-right: 15px;
+            float: left;
+        }
+
+        .input input[type='text'], .input input[type='password'] {
+            width: 250px;
+            height: 25px;
+            margin-right: 10px;
+            line-height: 28px;
+        }
+
+        .submit {
+            width:100px;
+			height:35px;
+			line-height:35px;
+			vertical-align:middle;
+        }
+
+        label.error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+<section class="newsbanner"></section>
+<section id="main" class="area">
+	<div class="location">
+			{dede:type typeid='13'}  
+				<h2 class="news_t">[field:typename/]</h2>
+			{/dede:type} 
+	</div>
+	<section class="area combox">
+		<form name="" method="post" id="login"  action="/api/login">
+			<div class="login-form">
+				<div class="item">
+					<label class="name">账号</label>
+					<div class="input">
+						<input type="text" name="accounts" id="accounts"/>
+					</div>
+					<label class="tips"></label>
+				</div>
+				<div class="item">
+					<label class="name">密码</label>
+					<div class="input">
+						<input type="password" name="pwd" id="pwd"/>
+					</div>
+					<label class="tips"></label>
+				</div>
+				<div class="item" style="text-align: center;">
+					<input type="submit" value="立即登录" id="reg" class="submit"/>
+				</div>
+			</div>
+		</form>
+	</section>
+</section>
+{dede:include filename="foot.htm"/}
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //注册操作
+        $("#login").validate({
+            submitHandler: function (form) {
+                jQuery(form).ajaxSubmit();
+            },
+            rules: {
+                accounts: "required",
+                pwd: "required",
+            },
+            messages: {
+                accounts: "请输入登陆账号",
+                pwd: "请输入登陆密码",
+            },
+        });
+    });
+</script>
+</body>
+</html>

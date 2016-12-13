@@ -1,0 +1,1 @@
+<h2 class="news_t">[field:typename/]</h2>

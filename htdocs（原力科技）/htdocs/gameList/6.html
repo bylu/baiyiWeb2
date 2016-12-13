@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>我的网站</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="/templets/default/css/common.css">
+</head>
+<body class="body2">
+	<div class="container">
+		<div class="header">
+	<a href="/" class="logo"><img src="/templets/default/images/logo.png" /></a>
+	<div class="nav">
+		<ul>
+			<li><a href="/">首页</a></li>
+			<li><a href="/down">游戏下载</a></li>
+			<li><a href="/gameNews">游戏新闻</a></li>
+			<li><a href="">充值</a></li>
+			<li><a href="/gameHuodong">活动</a></li>
+			<li style="background-image:none;"><a href="/userCenter/">个人中心</a></li>
+		</ul>
+	</div>
+</div>
+		<div class="gameNewsArticleIndex">
+			<div class="huodongName">游戏详情</div>
+		</div>
+		<div class="contentBefore">
+			<div class="articleContent">
+				<div class="contentAfter">
+					<div class="contentArticleShow">
+						<div class="listContent">
+							<div class="showgameIntros">
+								<div class="showIcon">
+									<img src="/images/defaultpic.gif" />
+								</div>
+								<div class="showOpera">
+									<h2>水浒传</h2>
+									<div class="showLocation">
+										<span><img src="/templets/default/images/arrow.png" /></span>
+										<a href="#GIntroduce" class="operaIcon">游戏介绍</a>
+										<span><img src="/templets/default/images/arrow.png" /></span>
+										<a href="#GImaPic" class="operaIcon">游戏截图</a>
+										<span><img src="/templets/default/images/arrow.png" /></span>
+										<a href="#Gdetails" class="operaIcon">规则介绍</a>
+										<span><img src="/templets/default/images/arrow.png" /></span>
+										<a href="/gameList" class="operaIcon">返回首页</a>
+									</div>
+								</div>
+							</div>
+							<div class="showgameContent">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<div class="container">
+		<div class="footerOpera">
+			<ul>
+				<li><a>关注我们</a></li>
+				<li><a>商务合作</a></li>
+				<li><a>联系我们</a></li>
+				<li><a>客服中心</a></li>
+				<li><a>家长监护</a></li>
+			</ul>
+		</div>
+		<p>
+			抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活
+		</p>
+		<p>文网游备字【2015】 M-CBG 0742号 豫网文【2015】 1124-003号 豫ICP备12014032号-8</p>
+		<p>
+			客服QQ:9797-3001 客服热线：400-9010-676 商务合作：app_bd@78le.COM
+		</p>
+	</div>
+</div>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+            var tabli = $(".listTitle ul li ");
+            tabli.click(function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                var index = tabli.index(this);
+                $(".listContent  > div.listShow").eq(index).show().siblings().hide();
+            });
+        });
+	</script>
+</body>
+</html>
